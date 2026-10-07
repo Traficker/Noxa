@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOXA | GTD COLOMBIA SAS - Ropa en Tallas S a 4XL | Camisetas & Boxers</title>
+  <meta name="description" content="NOXA (GTD COLOMBIA SAS, NIT 900195679-1) - Tienda de ropa especializada en confort y tallas grandes reales: desde la S hasta la 4XL. Camisetas premium heavyweight y boxers ergonómicos en Cali, Colombia.">
+  <link rel="canonical" href="https://noxa.lat/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://noxa.lat/">
+  <meta property="og:title" content="NOXA | Ropa Confort Tallas S a 4XL - GTD COLOMBIA SAS">
+  <meta property="og:description" content="Especialistas en camisetas premium y boxers ergonómicos desde la talla S hasta la 4XL. NIT 900195679-1.">
+  <meta property="og:image" content="https://noxa.lat/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noxa: {
+              50: '#F5F7FA',
+              100: '#E4E7EB',
+              800: '#181B20',
+              900: '#0E1014',
+              950: '#08090C',
+            },
+            accent: {
+              lime: '#D2F824',
+              cyan: '#00E5FF',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0E1014;
+      color: #F3F4F6;
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+    .glass-card {
+      background: rgba(24, 27, 32, 0.7);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .neon-border:hover {
+      border-color: #D2F824;
+      box-shadow: 0 0 25px rgba(210, 248, 36, 0.15);
+    }
+  </style>
+
+  <script src="config.js"></script>
+</head>
+<body class="selection:bg-accent-lime selection:text-black antialiased">
+
+  <!-- TOP LEGAL ANNOUNCEMENT BAR (META BUSINESS VERIFICATION COMPLIANCE) -->
+  <div class="bg-black text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-accent-lime animate-pulse"></span>
+        <span>Razón Social Oficial: <strong class="text-accent-lime">GTD COLOMBIA SAS</strong> • Marca Comercial: <strong>NOXA</strong> • NIT: <strong>900195679-1</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400 text-[11px] font-mono">
+        <span>Cali, Valle del Cauca (760002)</span>
+        <span>•</span>
+        <a href="tel:+573115230622" class="hover:text-white transition flex items-center gap-1">
+          📞 +57 311 523 0622
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-noxa-950/90 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="bg-white p-1 rounded-xl flex items-center justify-center">
+          <img src="logo-icon.png" alt="Noxa Isotipo" class="h-9 w-9 object-contain">
+        </div>
+        <div>
+          <span class="block text-2xl font-heading font-black tracking-wider text-white">NOXA</span>
+          <span class="block text-[9px] font-mono uppercase tracking-widest text-slate-400">GTD COLOMBIA SAS • S a 4XL</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#inicio" class="hover:text-accent-lime transition">Inicio</a>
+        <a href="#tallas" class="hover:text-accent-lime transition">Tallas S a 4XL</a>
+        <a href="#productos" class="hover:text-accent-lime transition">Colección</a>
+        <a href="#transparencia" class="hover:text-accent-lime transition">Ficha Legal</a>
+        <a href="#contacto" class="hover:text-accent-lime transition">Contacto</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/573115230622?text=Hola%20Noxa,%20quisiera%20consultar%20sobre%20las%20tallas%20y%20prendas%20disponibles" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold text-black bg-accent-lime hover:bg-white shadow-lg transition-all hover:-translate-y-0.5">
+          Comprar por WhatsApp
+        </a>
+        <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-slate-300 hover:bg-white/10" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-noxa-950 border-b border-white/10 px-4 py-4 space-y-3">
+      <a href="#inicio" class="block py-2 text-sm text-slate-200">Inicio</a>
+      <a href="#tallas" class="block py-2 text-sm text-slate-200">Tallas S a 4XL</a>
+      <a href="#productos" class="block py-2 text-sm text-slate-200">Colección</a>
+      <a href="#transparencia" class="block py-2 text-sm text-slate-200">Ficha Legal</a>
+      <a href="#contacto" class="block py-2 text-sm text-slate-200">Contacto</a>
+      <a href="https://wa.me/573115230622" class="block text-center py-3 rounded-xl bg-accent-lime text-black font-bold text-sm">Pedir por WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-accent-lime">
+            <span class="w-2 h-2 rounded-full bg-accent-lime animate-ping"></span>
+            <span>Ropa Confort • Especialistas en Tallas Grandes (S a 4XL)</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-heading font-black tracking-tight leading-[1.08] text-white">
+            Tu Talla Real. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-lime via-white to-accent-cyan">Confort Absoluto.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            En <strong>NOXA</strong> (marca oficial de <strong>GTD COLOMBIA SAS</strong>), creamos prendas diseñadas para personas que buscan comodidad de verdad. Confeccionamos desde la talla <strong>S hasta la 4XL</strong> en camisetas de alto gramaje y boxers ergonómicos que no aprietan, no se suben y duran mucho más.
+          </p>
+
+          <!-- Size Pills Quick Bar -->
+          <div class="pt-2">
+            <span class="text-xs text-slate-400 font-mono block mb-2 font-semibold">TALLAS DISPONIBLES EN STOCK:</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10 text-xs font-bold text-white">S</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10 text-xs font-bold text-white">M</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10 text-xs font-bold text-white">L</span>
+              <span class="px-3 py-1.5 rounded-lg bg-white/10 border border-white/10 text-xs font-bold text-white">XL</span>
+              <span class="px-3 py-1.5 rounded-lg bg-accent-lime/20 border border-accent-lime text-xs font-bold text-accent-lime">2XL</span>
+              <span class="px-3 py-1.5 rounded-lg bg-accent-lime/20 border border-accent-lime text-xs font-bold text-accent-lime">3XL</span>
+              <span class="px-3 py-1.5 rounded-lg bg-accent-lime/20 border border-accent-lime text-xs font-bold text-accent-lime">4XL</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="#productos" class="inline-flex items-center justify-center px-7 py-4 rounded-full text-sm font-bold text-black bg-accent-lime hover:bg-white shadow-xl transition-all hover:-translate-y-0.5">
+              Ver Camisetas y Boxers
+              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="#transparencia" class="inline-flex items-center justify-center px-6 py-4 rounded-full text-sm font-semibold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+              Ficha Legal (GTD COLOMBIA SAS)
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-xs text-slate-400">
+            <div>
+              <p class="font-mono text-[10px] text-slate-500">RAZÓN SOCIAL</p>
+              <p class="font-bold text-white">GTD COLOMBIA SAS</p>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] text-slate-500">IDENTIFICACIÓN NIT</p>
+              <p class="font-bold text-white">900195679-1</p>
+            </div>
+            <div>
+              <p class="font-mono text-[10px] text-slate-500">CIUDAD DE OPERACIÓN</p>
+              <p class="font-bold text-white">Cali, Colombia</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden glass-card p-3 border border-white/15 shadow-2xl relative">
+            <img src="hero.jpg" alt="NOXA Ropa para todas las tallas S a 4XL" class="w-full h-[460px] object-cover rounded-2xl">
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-black/85 backdrop-blur-md border border-white/15 flex items-center justify-between">
+              <div>
+                <span class="text-xs text-accent-lime font-mono font-bold block">TALLAJE REAL COLOMBIANO</span>
+                <span class="text-sm font-heading font-bold text-white">Comodidad y Ajuste Perfecto</span>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-accent-lime text-black font-black text-xs">
+                S - 4XL
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIZE GUIDE HIGHLIGHT SECTION -->
+  <section id="tallas" class="py-16 bg-noxa-900 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase font-mono font-bold text-accent-lime tracking-wider">Especialistas en Tallas Grandes</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-white mt-1">¿Por qué NOXA es diferente?</h2>
+        <p class="text-slate-400 text-sm mt-2">No nos limitamos a agrandar un patrón estándar; rediseñamos cada prenda para que tenga el largo adecuado, hombros firmes y no se suba al moverte.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl glass-card neon-border transition-all">
+          <div class="w-12 h-12 rounded-xl bg-accent-lime/10 text-accent-lime flex items-center justify-center text-2xl mb-4 font-bold">
+            📏
+          </div>
+          <h3 class="text-lg font-heading font-bold text-white mb-2">Tallaje Exacto S a 4XL</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Desde tallas estándar (S, M, L) hasta tallas especiales y plus size (XL, 2XL, 3XL, 4XL) con medidas reales colombianas que no se encogen.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card neon-border transition-all">
+          <div class="w-12 h-12 rounded-xl bg-accent-cyan/10 text-accent-cyan flex items-center justify-center text-2xl mb-4 font-bold">
+            🛡️
+          </div>
+          <h3 class="text-lg font-heading font-bold text-white mb-2">Cuellos y Costuras Reforzadas</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Nuestras camisetas cuentan con rib reforzado que resiste decenas de lavadas sin deformarse, manteniendo siempre un aspecto pulcro y moderno.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card neon-border transition-all">
+          <div class="w-12 h-12 rounded-xl bg-accent-lime/10 text-accent-lime flex items-center justify-center text-2xl mb-4 font-bold">
+            ☁️
+          </div>
+          <h3 class="text-lg font-heading font-bold text-white mb-2">Boxers Anti-Fricción</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Desarrollados específicamente para evitar el roce entre las piernas. Elásticos premium de toque suave que no se enrollan ni cortan la circulación.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SHOWCASE -->
+  <section id="productos" class="py-20 bg-noxa-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase font-mono font-bold text-accent-lime tracking-wider">Línea Esencial NOXA</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-white mt-1">Nuestra Colección</h2>
+        <p class="text-slate-400 text-sm mt-2">Básicos de alto rendimiento diseñados para el día a día.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        
+        <!-- Product 1: Camisetas -->
+        <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group hover:border-accent-lime/50 transition-all">
+          <div class="relative h-80 overflow-hidden">
+            <img src="camisetas.jpg" alt="Camisetas NOXA Tallas S a 4XL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-accent-lime font-mono text-xs font-bold border border-accent-lime/30">
+                TALLAS S, M, L, XL, 2XL, 3XL, 4XL
+              </span>
+            </div>
+          </div>
+          <div class="p-8 space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-heading font-bold text-white">Camisetas Heavyweight Premium</h3>
+              <span class="text-accent-lime text-xs font-mono font-semibold uppercase">Algodón 240g</span>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Camisetas en tonos neutros (Negro, Blanco, Gris plomo, Crudo) confeccionadas en algodón de alto gramaje. Brindan una silueta estilizada, cuerpo estructurado y confort total.
+            </p>
+            <div class="pt-2 flex items-center justify-between">
+              <span class="text-xs text-slate-300 font-mono">Disponibilidad Inmediata</span>
+              <a href="https://wa.me/573115230622?text=Hola%20Noxa,%20me%20interesan%20las%20camisetas%20en%20talla%20..." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-accent-lime hover:text-black text-white text-xs font-bold transition-all">
+                Cotizar por WhatsApp →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Boxers -->
+        <div class="glass-card rounded-3xl overflow-hidden border border-white/10 group hover:border-accent-lime/50 transition-all">
+          <div class="relative h-80 overflow-hidden">
+            <img src="boxers.jpg" alt="Boxers Ergonómicos NOXA Tallas S a 4XL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-accent-cyan font-mono text-xs font-bold border border-accent-cyan/30">
+                TALLAS S, M, L, XL, 2XL, 3XL, 4XL
+              </span>
+            </div>
+          </div>
+          <div class="p-8 space-y-4">
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-heading font-bold text-white">Boxers Ergonómicos Ultra Confort</h3>
+              <span class="text-accent-cyan text-xs font-mono font-semibold uppercase">Anti-Fricción</span>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Boxers fabricados con mezclas suaves de modal y elastano. Soporte anatómico, pretina anti-marcas y largo perfecto que evita que la tela se enrolle al caminar.
+            </p>
+            <div class="pt-2 flex items-center justify-between">
+              <span class="text-xs text-slate-300 font-mono">Packs Individuales & x3</span>
+              <a href="https://wa.me/573115230622?text=Hola%20Noxa,%20me%20interesan%20los%20boxers%20en%20talla%20..." target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-accent-lime hover:text-black text-white text-xs font-bold transition-all">
+                Cotizar por WhatsApp →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL & META VERIFICATION TRANSPARENCY SECTION -->
+  <section id="transparencia" class="py-20 bg-noxa-900 border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase font-mono font-bold text-accent-lime tracking-wider">Transparencia y Legalidad</span>
+        <h2 class="text-3xl font-heading font-black text-white mt-1">Ficha Institucional de Empresa</h2>
+        <p class="text-slate-400 text-sm mt-1">Información verificada ante Meta Business Suite y entidades comerciales de Colombia.</p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-8 sm:p-10 border border-emerald-500/30 relative">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-white/10 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-white p-1 rounded-xl">
+              <img src="logo-icon.png" alt="Noxa Logo" class="w-8 h-8 object-contain">
+            </div>
+            <div>
+              <h3 class="text-xl font-heading font-bold text-white">GTD COLOMBIA SAS (NOXA)</h3>
+              <span class="text-xs text-accent-lime font-mono">Portafolio Comercial Verificado en Meta</span>
+            </div>
+          </div>
+          <span class="px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold">
+            ✓ Negocio Verificado
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-slate-300">
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">NOMBRE LEGAL DEL NEGOCIO:</span>
+            <strong class="text-white text-sm">GTD COLOMBIA SAS</strong>
+          </div>
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">MARCA COMERCIAL (PORTAFOLIO):</span>
+            <strong class="text-accent-lime text-sm">NOXA</strong>
+          </div>
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">IDENTIFICACIÓN FISCAL (NIT):</span>
+            <strong class="text-white text-sm">900195679-1</strong>
+          </div>
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">TELÉFONO DEL NEGOCIO:</span>
+            <strong class="text-white text-sm">+57 311 523 0622</strong>
+          </div>
+          <div class="sm:col-span-2 p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">DIRECCIÓN COMERCIAL OFICIAL:</span>
+            <strong class="text-white text-sm">CL 18 NORTE # 85 - 810 CS 36, Cali, Valle del Cauca 760002, Colombia</strong>
+          </div>
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">SITIO WEB OFICIAL:</span>
+            <strong class="text-white text-sm">https://noxa.lat/</strong>
+          </div>
+          <div class="p-3.5 rounded-xl bg-black/40 border border-white/5">
+            <span class="text-slate-500 block text-[10px]">CORREO DE CONTACTO:</span>
+            <strong class="text-white text-sm">contacto@noxa.lat</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION -->
+  <section id="contacto" class="py-20 bg-noxa-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs uppercase font-mono font-bold text-accent-lime tracking-wider">Atención Directa</span>
+          <h2 class="text-3xl font-heading font-black text-white">Habla con NOXA</h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            ¿Tienes dudas sobre tu talla ideal o quieres hacer un pedido directo de camisetas y boxers? Estamos a tu servicio desde Cali para todo Colombia.
+          </p>
+
+          <div class="space-y-4 pt-2 text-xs sm:text-sm">
+            <div class="p-4 rounded-2xl glass-card flex items-start gap-3">
+              <span class="text-lg">📍</span>
+              <div>
+                <strong class="text-white block">Sede Comercial:</strong>
+                <span class="text-slate-300">CL 18 NORTE # 85 - 810 CS 36</span>
+                <span class="text-[11px] text-slate-500 block">Cali, Valle del Cauca 760002 • Colombia</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl glass-card flex items-start gap-3">
+              <span class="text-lg">📞</span>
+              <div>
+                <strong class="text-white block">Teléfono / WhatsApp:</strong>
+                <a href="https://wa.me/573115230622" class="text-accent-lime font-bold hover:underline">+57 311 523 0622</a>
+                <span class="text-[11px] text-slate-500 block">Lunes a Sábado: 8:00 AM - 7:00 PM</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl glass-card flex items-start gap-3">
+              <span class="text-lg">✉️</span>
+              <div>
+                <strong class="text-white block">Correo Electrónico:</strong>
+                <a href="mailto:contacto@noxa.lat" class="text-accent-lime font-bold hover:underline">contacto@noxa.lat</a>
+                <span class="text-[11px] text-slate-500 block">Atención comercial y soporte al cliente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-8 sm:p-10 rounded-3xl border border-white/10">
+            <h3 class="text-xl font-heading font-bold text-white mb-2">Envíanos un Mensaje</h3>
+            <p class="text-xs text-slate-400 mb-6">Completa tus datos y te responderemos de inmediato con la guía de tallas y catálogo.</p>
+
+            <form id="contactForm" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-xs font-semibold text-slate-300 mb-1">Tu Nombre *</label>
+                  <input type="text" id="name" required class="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-black/60 text-white text-xs focus:outline-none focus:border-accent-lime" placeholder="Ej. Carlos Rodríguez">
+                </div>
+                <div>
+                  <label for="phone" class="block text-xs font-semibold text-slate-300 mb-1">WhatsApp / Teléfono *</label>
+                  <input type="tel" id="phone" required class="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-black/60 text-white text-xs focus:outline-none focus:border-accent-lime" placeholder="+57 300 000 0000">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="size" class="block text-xs font-semibold text-slate-300 mb-1">Talla de Interés</label>
+                  <select id="size" class="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-black/60 text-white text-xs focus:outline-none focus:border-accent-lime">
+                    <option value="S">Talla S</option>
+                    <option value="M">Talla M</option>
+                    <option value="L">Talla L</option>
+                    <option value="XL">Talla XL</option>
+                    <option value="2XL" selected>Talla 2XL (Plus Size)</option>
+                    <option value="3XL">Talla 3XL (Plus Size)</option>
+                    <option value="4XL">Talla 4XL (Plus Size)</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="interest" class="block text-xs font-semibold text-slate-300 mb-1">Prenda de Interés</label>
+                  <select id="interest" class="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-black/60 text-white text-xs focus:outline-none focus:border-accent-lime">
+                    <option value="camisetas">Camisetas Heavyweight</option>
+                    <option value="boxers">Boxers Ergonómicos</option>
+                    <option value="ambos">Ambos Productos (Combo)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="msg" class="block text-xs font-semibold text-slate-300 mb-1">Mensaje o Consulta *</label>
+                <textarea id="msg" rows="3" required class="w-full px-4 py-2.5 rounded-xl border border-white/10 bg-black/60 text-white text-xs focus:outline-none focus:border-accent-lime" placeholder="¿Tienes alguna pregunta sobre medidas o colores?"></textarea>
+              </div>
+
+              <div class="flex items-start gap-2 pt-1">
+                <input type="checkbox" id="policy" required class="mt-1 rounded text-accent-lime focus:ring-0">
+                <label for="policy" class="text-[11px] text-slate-400">
+                  Acepto la <a href="politica-de-privacidad.html" target="_blank" class="text-accent-lime underline">Política de Tratamiento de Datos</a> conforme a la Ley 1581 de 2012.
+                </label>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl bg-accent-lime text-black font-heading font-black text-sm hover:bg-white transition-all shadow-lg">
+                Enviar Solicitud
+              </button>
+            </form>
+
+            <div id="formFeedback" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs">
+              ✅ ¡Mensaje recibido! Nos comunicaremos contigo por WhatsApp para asesorarte con tus prendas.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-slate-400 pt-16 pb-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <div class="space-y-4 md:col-span-1">
+          <div class="flex items-center gap-3">
+            <div class="bg-white p-1 rounded-lg">
+              <img src="logo-icon.png" alt="Noxa Logo" class="w-7 h-7 object-contain">
+            </div>
+            <span class="text-xl font-heading font-black text-white">NOXA</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Marca especializada en moda inclusiva de confort diario, camisetas de alto gramaje y boxers ergonómicos desde la talla S hasta la 4XL.
+          </p>
+          <div class="text-[11px] text-slate-500 font-mono">
+            GTD COLOMBIA SAS • NIT: 900195679-1
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white">Tallas Especiales</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#tallas" class="hover:text-white transition">Tallas Estándar: S, M, L</a></li>
+            <li><a href="#tallas" class="hover:text-white transition">Tallas Plus Size: XL, 2XL</a></li>
+            <li><a href="#tallas" class="hover:text-white transition">Tallas Grandes: 3XL, 4XL</a></li>
+            <li><a href="#productos" class="hover:text-white transition">Guía de Ajuste Cómodo</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white">Legal & Transparencia</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="politica-de-privacidad.html" class="hover:text-white transition">Política de Privacidad (Habeas Data)</a></li>
+            <li><a href="terminos-y-condiciones.html" class="hover:text-white transition">Términos y Condiciones</a></li>
+            <li><a href="#transparencia" class="hover:text-white transition">Razón Social: GTD COLOMBIA SAS</a></li>
+            <li><a href="#transparencia" class="hover:text-white transition">NIT: 900195679-1</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white">Sede y Contacto</h4>
+          <p class="text-xs leading-relaxed">
+            CL 18 NORTE # 85 - 810 CS 36<br>
+            Cali, Valle del Cauca 760002<br>
+            Colombia
+          </p>
+          <p class="text-xs pt-1">
+            <strong>WhatsApp:</strong> +57 311 523 0622<br>
+            <strong>Email:</strong> contacto@noxa.lat
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© 2026 <strong>GTD COLOMBIA SAS</strong> / NOXA. Todos los derechos reservados.</p>
+        <p class="text-[11px] font-mono">noxa.lat • Cali, Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/573115230622?text=Hola%20Noxa,%20quisiera%20asesor%C3%ADa%20sobre%20las%20tallas%20y%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black shadow-2xl transition-all hover:scale-110 flex items-center justify-center" aria-label="WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('formFeedback');
+    if (form && feedback) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        feedback.classList.remove('hidden');
+        form.reset();
+        setTimeout(() => {
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      });
+    }
+  </script>
+
+</body>
+</html>
